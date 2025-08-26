@@ -5,8 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+       <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
-    <h1 class="text-red-700">hello</h1>
+<body class="font-hind">
+<header>
+    <nav class="bg-white py-[25px] sm:px-[50px] flex gap-3 flex-col sm:flex-row items-center justify-between">
+        <div class="flex gap-2">
+            <img src="./assets/logo.png" alt="" class="w-[50px]">
+            <h1 class="text-[#006747] font-extrabold">Emergency <br> Service</h1>
+        </div>
+        <div class="flex gap-5">
+            <div class="bg-[rgba(65,255,107,0.1)] rounded-[50px] flex gap-[10px] items-center px-[25px]">
+                <span>0</span>
+                <img src="./assets/heart.png" alt="" class="w-[30px]">
+            </div>
+            <div class="bg-[rgba(65,255,107,0.1)] rounded-[50px] flex gap-[10px] items-center px-[20px]">
+                <span>100</span>
+                <img src="./assets/coin.png" alt="" class="w-[25px]">
+            </div>
+            <button class="rounded-[50px] bg-[#00A63E] text-white py-[14px] px-[36px]"><span>0</span> Copy</button>
+        </div>
+    </nav>
+
+    <section class="py-5 bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] px-4 lg:px-0">
+        <div class="text-center">
+            <img src="./assets/logo-dark.png" alt="" class="w-[92px] mx-auto">
+            <h1 class="py-3 banner-heading font-bold text-white">Emergency Service Directory</h1>
+            <p class="banner-sub-heading font-semibold text-white">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+        </div>
+
+    </section>
+</header>
+
 </body>
 </html>
