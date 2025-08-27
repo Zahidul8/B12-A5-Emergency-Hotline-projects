@@ -11,3 +11,9 @@
 .banner-sub-heading {
     font-size: clamp(1rem, 4vw,20px);
 }
+.card-heading {
+    font-size: clamp(20px, 4vw, 24px);
+}
+.card-number {
+    font-size: clamp(24px, 4vw, 32px);
+}
