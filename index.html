@@ -18,7 +18,7 @@
         </div>
         <div class="flex gap-5">
             <div class="bg-[rgba(65,255,107,0.1)] rounded-[50px] flex gap-[10px] items-center px-[25px]">
-                <span>0</span>
+                <span id="counts-heart">0</span>
                 <img src="./assets/heart.png" alt="" class="w-[30px]">
             </div>
             <div class="bg-[rgba(65,255,107,0.1)] rounded-[50px] flex gap-[10px] items-center px-[20px]">
@@ -42,13 +42,13 @@
 <main class="bg-[#cff7e970] pt-[48px] pb-[80px]">
 <section class="grid grid-cols-1 lg:grid-cols-4 gap-[30px] max-w-[1800px] mx-auto px-4">
 
-    <div class=" col-auto lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-[30px] ">
+    <div id="card-container" class=" col-auto lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-[30px] ">
         <div class="bg-white p-[32px] rounded-xl shadow-md">
             <div class="flex items-center justify-between">
                 <div class="bg-[#FFE3E2] rounded-[16px] p-[14px]">
                     <img src="./assets/emergency.png" alt="" class="w-[32px]">
                 </div>
-                <span class="cursor-pointer"><i class='bx bx-heart text-[24px]'></i></span>
+                <span class="cursor-pointer"><i class='bx bx-heart text-[24px] heart-count'></i></span>
             </div>
             <h1 class="text-[#111111] text-[24px] font-bold mt-4">National Emergency Number</h1>
             <p class="text-[18px] text-[rgba(92,92,92,1)]">National Emergency</p>
@@ -67,7 +67,7 @@
                 <div class="bg-[#DFEFFF] rounded-[16px] p-[14px]">
                     <img src="./assets/police.png" alt="" class="w-[32px]">
                 </div>
-                <span class="cursor-pointer"><i class='bx bx-heart text-[24px]'></i></span>
+                <span class=" cursor-pointer"><i class='bx bx-heart text-[24px] heart-count'></i></span>
             </div>
             <h1 class="text-[#111111] text-[24px] font-bold mt-4">Police Helpline Number</h1>
             <p class="text-[18px] text-[rgba(92,92,92,1)]">Police</p>
@@ -86,7 +86,7 @@
                 <div class="bg-[#FFE3E2] rounded-[16px] p-[14px]">
                     <img src="./assets/fire-service.png" alt="" class="w-[32px]">
                 </div>
-                <span class="cursor-pointer"><i class='bx bx-heart text-[24px]'></i></span>
+                <span class=" cursor-pointer"><i class='bx bx-heart text-[24px] heart-count'></i></span>
             </div>
             <h1 class="text-[#111111] text-[24px] font-bold mt-4">Fire Service Number</h1>
             <p class="text-[18px] text-[rgba(92,92,92,1)]">Fire Service</p>
@@ -105,7 +105,7 @@
                 <div class="bg-[#FFE3E2] rounded-[16px] p-[14px]">
                     <img src="./assets/ambulance.png" alt="" class="w-[32px]">
                 </div>
-                <span class="cursor-pointer"><i class='bx bx-heart text-[24px]'></i></span>
+                <span class=" cursor-pointer"><i class='bx bx-heart text-[24px] heart-count'></i></span>
             </div>
             <h1 class="text-[#111111] text-[24px] font-bold mt-4">Ambulance Service</h1>
             <p class="text-[18px] text-[rgba(92,92,92,1)]">Ambulance</p>
@@ -124,7 +124,7 @@
                 <div class="bg-[#FFE3E2] rounded-[16px] p-[14px]">
                     <img src="./assets/emergency.png" alt="" class="w-[32px]">
                 </div>
-                <span class="cursor-pointer"><i class='bx bx-heart text-[24px]'></i></span>
+                <span class=" cursor-pointer"><i class='bx bx-heart text-[24px] heart-count'></i></span>
             </div>
             <h1 class="text-[#111111] text-[24px] font-bold mt-4">Women & Child Helpline</h1>
             <p class="text-[18px] text-[rgba(92,92,92,1)]">Women & Child Helpline</p>
@@ -143,7 +143,7 @@
                 <div class="bg-[#FFE3E2] rounded-[16px] p-[14px]">
                     <img src="./assets/emergency.png" alt="" class="w-[32px]">
                 </div>
-                <span class="cursor-pointer"><i class='bx bx-heart text-[24px]'></i></span>
+                <span class=" cursor-pointer"><i class='bx bx-heart text-[24px] heart-count'></i></span>
             </div>
             <h1 class="text-[#111111] text-[24px] font-bold mt-4">Anti-Corruption Helpline</h1>
             <p class="text-[18px] text-[rgba(92,92,92,1)]">Anti-Corruption</p>
@@ -162,7 +162,7 @@
                 <div class="bg-[#FFE3E2] rounded-[16px] p-[14px]">
                     <img src="./assets/emergency.png" alt="" class="w-[32px]">
                 </div>
-                <span class="cursor-pointer"><i class='bx bx-heart text-[24px]'></i></span>
+                <span class=" cursor-pointer"><i class='bx bx-heart text-[24px] heart-count'></i></span>
             </div>
             <h1 class="text-[#111111] text-[24px] font-bold mt-4">Electricity Helpline</h1>
             <p class="text-[18px] text-[rgba(92,92,92,1)]">Electricity Outage</p>
@@ -181,7 +181,7 @@
                 <div class="bg-[#FFE3E2] rounded-[16px] p-[14px]">
                     <img src="./assets/emergency.png" alt="" class="w-[32px]">
                 </div>
-                <span class="cursor-pointer"><i class='bx bx-heart text-[24px]'></i></span>
+                <span class=" cursor-pointer"><i class='bx bx-heart text-[24px] heart-count'></i></span>
             </div>
             <h1 class="text-[#111111] text-[24px] font-bold mt-4">Brac Helpline</h1>
             <p class="text-[18px] text-[rgba(92,92,92,1)]">Brac</p>
@@ -200,7 +200,7 @@
                 <div class="bg-[#FFE3E2] rounded-[16px] p-[14px]">
                     <img src="./assets/emergency.png" alt="" class="w-[32px]">
                 </div>
-                <span class="cursor-pointer"><i class='bx bx-heart text-[24px]'></i></span>
+                <span class=" cursor-pointer"><i class='bx bx-heart text-[24px] heart-count'></i></span>
             </div>
             <h1 class="text-[#111111] text-[24px] font-bold mt-4">Bangladesh Railway Helpline </h1>
             <p class="text-[18px] text-[rgba(92,92,92,1)]">Bangladesh Railway</p>
@@ -230,5 +230,7 @@
 </section>
 </main>
 
+
+<script src="index.js"></script>
 </body>
 </html>
