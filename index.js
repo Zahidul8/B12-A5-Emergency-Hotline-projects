@@ -29,7 +29,7 @@ document.getElementById('card-container')
     const callHistoryContainer = getElement('call-history-container');
     const element = document.createElement('div');
     const time = new Date().toLocaleTimeString();
-    element.innerHTML = `<div class="bg-[#FAFAFA] rounded-lg p-4 flex items-center justify-between mb-2">
+    element.innerHTML = `<div class="bg-[#FAFAFA] rounded-lg p-4 flex items-center justify-between mt-2">
                 <div>
                     <h1 class=" font-semibold font-inter text-[#111111]">${serviceName}</h1>
                     <p class="text-[#5C5C5C]">${serviceNumber}</p>
