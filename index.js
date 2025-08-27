@@ -12,7 +12,8 @@ document.getElementById('card-container')
 
     }
    if (event.target.className.includes('btn-call')) {
-    const button = event.target;    
+    const button = event.target;  
+    const serviceName = button.parentNode.parentNode.children[1].innerText;
     const serviceSubName = button.parentNode.parentNode.children[2].innerText;
     const serviceNumber = button.parentNode.parentNode.children[3].innerText;
     let availableCoin = parseInt(getElement('available-coin').innerText);
@@ -24,9 +25,28 @@ document.getElementById('card-container')
     alert(`📞Calling ${serviceSubName} ${serviceNumber}...`);
     availableCoin -= 20;
     getElement('available-coin').innerText = availableCoin;
+
+    const callHistoryContainer = getElement('call-history-container');
+    const element = document.createElement('div');
+    const time = new Date().toLocaleTimeString();
+    element.innerHTML = `<div class="bg-[#FAFAFA] rounded-lg p-4 flex items-center justify-between mb-2">
+                <div>
+                    <h1 class=" font-semibold font-inter text-[#111111]">${serviceName}</h1>
+                    <p class="text-[#5C5C5C]">${serviceNumber}</p>
+                </div>
+               <p class="text-[#111111]">${time}</p>
+
+            </div>`
    
-    
+    callHistoryContainer.appendChild(element);
     
    }
+
+
     
+})
+
+document.getElementById('btn-clear')
+.addEventListener('click', function() {
+    getElement('call-history-container').innerHTML = '';
 })
