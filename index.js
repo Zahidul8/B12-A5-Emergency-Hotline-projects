@@ -42,7 +42,20 @@ document.getElementById('card-container')
     
    }
 
+   if(event.target.className.includes('btn-copy')) {
+         const button = event.target;
+         const serviceNumber = button.parentNode.parentNode.children[3].innerText;
+         console.log(serviceNumber);
+         
+         alert(`Number is copied: ${serviceNumber}`);
+        let copyCount = parseInt(getElement('copy-count').innerText);
+        copyCount++;
+        getElement('copy-count').innerText = copyCount;
 
+        navigator.clipboard.writeText(serviceNumber);
+
+
+   }
     
 })
 
