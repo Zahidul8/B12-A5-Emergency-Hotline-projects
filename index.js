@@ -19,7 +19,7 @@ document.getElementById('card-container')
     let availableCoin = parseInt(getElement('available-coin').innerText);
     
     if (availableCoin < 20) {
-        alert('❌ “You don’t have enough coins. You need at least 20 coins to make a call.”')
+        alert('❌ You don’t have enough coins. You need at least 20 coins to make a call.')
         return;
     }
     alert(`📞Calling ${serviceSubName} ${serviceNumber}...`);
